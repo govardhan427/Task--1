@@ -1,0 +1,64 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Default background color */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+header.scrolled {
+    background-color: red; /* Background color when scrolled */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Text color */
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0; /* Color of text when hovered */
+    background-color: #444; /* Background color of menu item when hovered */
+    border-radius: 5px;
+}
+
+/* Main content styling */
+main {
+    padding-top: 60px; /* Space for fixed navbar */
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+section h1 {
+    margin-top: 0;
+}
